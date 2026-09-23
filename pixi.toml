@@ -1,0 +1,15 @@
+[workspace]
+channels = ["conda-forge"]
+name = "starwood"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+run-online = "python3 -m src.cli --data sample_data --out report.json --online --record llm_recording.json"
+run-offline = "python3 -m src.cli --data sample_data --out report.json --offline"
+test = "pytest"
+
+[dependencies]
+pydantic = ">=2,<3"
+pytest = ">=8,<9"
+openai = ">=1,<2"

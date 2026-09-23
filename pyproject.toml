@@ -1,0 +1,18 @@
+[project]
+name = "finance-agent"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2,<3",
+    "openai>=1,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

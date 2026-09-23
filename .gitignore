@@ -1,0 +1,18 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# uv virtual environment
+.venv/
+
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local secrets
+.env
+.env.*
+
+# macOS
+.DS_Store
